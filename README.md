@@ -59,9 +59,10 @@ hisense_tv:
   track: true
 ```
 
-Inside the HA `configuration.yaml` file create these 2 new entities. Change here the smartphone mac address, previously saved by you, as stated (`SMARTPHONE_MAC_ADDRESS_AUTHORIZED_PREVIOUSLY_WITH_THE_APP_REMOTENOW*  == AA:BB:CC:DD:EE:FF`):
+Inside the HA `configuration.yaml` file create these entries accordingly. Change here the smartphone mac address, previously saved by you, as stated (`SMARTPHONE_MAC_ADDRESS_AUTHORIZED_PREVIOUSLY_WITH_THE_APP_REMOTENOW`  == `AA:BB:CC:DD:EE:FF`):
 
 ```yaml
+
 switch:
   - platform: template
     switches:
@@ -84,6 +85,8 @@ switch:
           data:
             topic: '/remoteapp/tv/remote_service/SMARTPHONE_MAC_ADDRESS_AUTHORIZED_PREVIOUSLY_WITH_THE_APP_REMOTENOW$normal/actions/sendkey'
             payload: 'KEY_POWER'
+
+wake_on_lan:
 
 sensor:
   - platform: mqtt
