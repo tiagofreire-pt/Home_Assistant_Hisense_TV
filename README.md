@@ -2,6 +2,8 @@
 
 This is my successful experience getting this to work, with a TV Hisense H43B7320 and its firmware version `V0000.01.00a.K0117`.
 
+Tested on Home Assistant Core version 0.111.4 and Mosquitto add-on version 5.1.
+
 First of all, install the RemoteNow app on your android smartphone (https://play.google.com/store/apps/details?id=com.universal.remote.ms&hl=en). Pair the said smartphone with the TV, using the app. Save the mac address of this device for later.
 
 Put this inside a `hisense.conf`, in the Home Assistant Core (HA) folder `/share/mosquitto/`:
@@ -335,9 +337,13 @@ script.executa_hisense_home:
   icon: 'mdi:menu-open'
 ```
 
+Will be similar to this:
+
+![lovelace_card](./lovelace_card.png)
+
 ## Further debugging or exploring the MQTT broker inside the TV
 
-You can install the software MQTT Explorer (http://mqtt-explorer.com/), and use in your local network with these configurations:
+You may install the software `MQTT Explorer` (http://mqtt-explorer.com/) and use in your local network with these configurations:
 
 ![mqtt_explorer_configs](./mqtt_explorer_configs.png)
 
