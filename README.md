@@ -8,12 +8,10 @@ First of all, install the RemoteNow app on your android smartphone (https://play
 
 Your need to access the following path, having beforehand the Samba add-on installed on your Home Assistant instance:
 
-- Windows: `\\YOUR_HA_LAN_IP\share\mosquitto`
-- Linux: `smb://YOUR_HA_LAN_IP/share/mosquitto`
+- Windows: `\\YOUR_HA_LAN_IP\`
+- Linux: `smb://YOUR_HA_LAN_IP/`
 
-If needed, create the folders accordingly.
-
-Put this inside a `hisense.conf`, in the said Home Assistant Core (HA) folder `/share/mosquitto/`:
+Put this inside a `hisense.conf`, in the above path - subfolder `/share/mosquitto/`:
 
 ```
 connection hisensemqtt
