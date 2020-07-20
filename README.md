@@ -13,7 +13,7 @@ Your need to access the following path, having beforehand the Samba add-on insta
 
 If needed, create the folders accordingly.
 
-Put this inside a `hisense.conf`, in the Home Assistant Core (HA) folder `/share/mosquitto/`:
+Put this inside a `hisense.conf`, in the said Home Assistant Core (HA) folder `/share/mosquitto/`:
 
 ```
 connection hisensemqtt
