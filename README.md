@@ -11,7 +11,7 @@ Your need to access the following path, having beforehand the Samba add-on insta
 - Windows: `\\YOUR_HA_LAN_IP\`
 - Linux: `smb://YOUR_HA_LAN_IP/`
 
-Put this inside a `hisense.conf`, in the above path - subfolder `/share/mosquitto/`:
+Put this inside a `hisense.conf`, in the above path - subfolder `/share/mosquitto/`. Change only the `TV_IP_ADDRESS_CHANGE_IT_HERE`, accordingly:
 
 ```
 connection hisensemqtt
