@@ -6,7 +6,7 @@ Tested on Home Assistant Core version 0.111.4 and Mosquitto add-on version 5.1.
 
 First of all, install the RemoteNow app on your android smartphone (https://play.google.com/store/apps/details?id=com.universal.remote.ms&hl=en). Pair the said smartphone with the TV, using the app. Save the mac address of this device for later.
 
-Your need to access the following path, having beforehand the Samba add-on installed on your Home Assistant instance:
+You need to access the following path, having beforehand the Samba add-on installed on your Home Assistant instance:
 
 - Windows: `\\YOUR_HA_LAN_IP\`
 - Linux: `smb://YOUR_HA_LAN_IP/`
