@@ -53,17 +53,6 @@ qmierjfpaoisdjmçfaisldjcçfskdjafcaçskdjcçfmasidcf(...)
 -----END CERTIFICATE-----
 ```
 
-Inside the HA `known_devices.yaml` file create this entry:
-
-```
-hisense_tv:
-  icon: 'mdi:television-classic'
-  mac: TV_MAC_ADDRESS_CHANGE_IT_HERE
-  name: 'Hisense TV'
-  picture:
-  track: true
-```
-
 Inside the HA `configuration.yaml` file create these entries accordingly. Change here the smartphone mac address, previously saved by you, as stated (`SMARTPHONE_MAC_ADDRESS_AUTHORIZED_PREVIOUSLY_WITH_THE_APP_REMOTENOW`  == `AA:BB:CC:DD:EE:FF`):
 
 ```yaml
